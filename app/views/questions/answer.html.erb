@@ -1,0 +1,18 @@
+<!-- app/views/questions/answer.html.erb -->
+<div class="container" id="answer">
+  <h1 class="text-center my-4">Stupid Coaching</h1>
+
+  <div class="p-2 rounded">
+    <p><%= @question %></p>
+    <p><strong>-You</strong></p>
+  </div>
+
+  <div class="bg-warning bg-gradient p-2 rounded">
+    <p><%= @answer %></p>
+    <p><strong>-Your coach</strong> </p>
+  </div>
+
+  <div class="text-center mt-4">
+    <%= link_to 'Ask another question', '/ask', class: 'btn btn-link' %>
+  </div>
+</div>
